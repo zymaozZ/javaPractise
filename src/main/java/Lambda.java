@@ -52,7 +52,7 @@ public class Lambda {
         Function<String, Integer> stringToInteger =
                 Integer::parseInt;
 
-        Supplier<Apple> s1 = Apple::new;
-        Apple a1 = s1.get();
+//        Supplier<Apple> s1 = Apple::new;
+//        Apple a1 = s1.get();
     }
 }
