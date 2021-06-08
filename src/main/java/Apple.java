@@ -16,4 +16,9 @@ public class Apple {
     public String getColor() {
         return "red";
     }
+
+    @Override
+    public String toString() {
+        return weight.toString();
+    }
 }
