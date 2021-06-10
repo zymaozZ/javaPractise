@@ -8,6 +8,8 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="OnJava8" />
+        <module name="refactor" />
+        <module name="onJava8" />
       </profile>
     </annotationProcessing>
   </component>

@@ -1,3 +1,5 @@
+package Lambda;
+
 public class Apple {
 
     public Apple(Integer weight, String color) {

@@ -1,6 +1,6 @@
-import java.util.Arrays;
+package Lambda;
+
 import java.util.Comparator;
-import java.util.List;
 
 public class AppleComparator implements Comparator<Apple> {
 

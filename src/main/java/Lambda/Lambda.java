@@ -1,3 +1,5 @@
+package Lambda;
+
 import java.util.*;
 import java.util.function.*;
 import java.util.stream.Stream;
@@ -52,7 +54,7 @@ public class Lambda {
         Function<String, Integer> stringToInteger =
                 Integer::parseInt;
 
-//        Supplier<Apple> s1 = Apple::new;
-//        Apple a1 = s1.get();
+//        Supplier<Lambda.Lambda.Apple> s1 = Lambda.Lambda.Apple::new;
+//        Lambda.Lambda.Apple a1 = s1.get();
     }
 }

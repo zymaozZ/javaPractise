@@ -1,9 +1,11 @@
+import Lambda.Apple;
+import Lambda.BufferReaderProcessor;
+import Lambda.Dish;
+
 import java.io.BufferedReader;
-import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.*;
-import java.util.function.Function;
 import java.util.stream.Collectors;
 
 public class Test {
@@ -27,13 +29,13 @@ public class Test {
         /**
          * 1
          */
-//        inventory.sort(new AppleComparator());
+//        inventory.sort(new Lambda.Lambda.AppleComparator());
         /**
          * 2
          */
-//        inventory.sort(new Comparator<Apple>() {
+//        inventory.sort(new Comparator<Lambda.Lambda.Apple>() {
 //            @Override
-//            public int compare(Apple o1, Apple o2) {
+//            public int compare(Lambda.Lambda.Apple o1, Lambda.Lambda.Apple o2) {
 //                return o1.getWeight().compareTo(o2.getWeight());
 //            }
 //        });
@@ -57,14 +59,14 @@ public class Test {
     public void testStream1() {
         List<Dish> menu = getMenu();
 //        List<String> names = new ArrayList<>();
-//        for (Dish d : menu) {
+//        for (Lambda.Dish d : menu) {
 //            names.add(d.getName());
 //        }
 
 //        List<String> name = new ArrayList<>();
-//        Iterator<Dish> iterator = menu.iterator();
+//        Iterator<Lambda.Dish> iterator = menu.iterator();
 //        while (iterator.hasNext()) {
-//            Dish d = iterator.next();
+//            Lambda.Dish d = iterator.next();
 //            name.add(d.getName());
 //        }
 

@@ -1,4 +1,4 @@
-package StreamTest;
+package Stream;
 
 import lombok.Data;
 
