@@ -1,5 +1,6 @@
 package StreamDemo;
 
+import java.nio.file.Files;
 import java.util.Arrays;
 import java.util.Comparator;
 import java.util.List;
@@ -74,7 +75,6 @@ public class StreamTest {
                 .reduce((t1, t2) -> t1.getValue() < t2.getValue() ? t1 : t2);
         Optional<Transaction> transaction2 = transactions.stream()
                 .min(Comparator.comparing(Transaction::getValue));
-
 
     }
 }
