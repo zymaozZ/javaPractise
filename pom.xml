@@ -11,6 +11,7 @@
     <modules>
         <module>onJava8</module>
         <module>refactor</module>
+        <module>designPattern</module>
     </modules>
 
     <properties>
