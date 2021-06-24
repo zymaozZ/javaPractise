@@ -12,6 +12,7 @@
         <module>onJava8</module>
         <module>refactor</module>
         <module>designPattern</module>
+        <module>Thread</module>
     </modules>
 
     <properties>

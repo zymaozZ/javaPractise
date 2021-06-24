@@ -8,13 +8,15 @@ import java.io.IOException;
 import java.util.Arrays;
 import java.util.Comparator;
 import java.util.List;
+import java.util.Optional;
 import java.util.stream.Collectors;
 
 public class Test {
 
     public static void main(String[] args) {
         Test t = new Test();
-        t.testStream2();
+//        t.testStream2();
+        t.testStream1();
     }
 
     public static String processFile(BufferReaderProcessor p) throws IOException {
@@ -72,7 +74,13 @@ public class Test {
 //            name.add(d.getName());
 //        }
 
-        List<String> names = menu.stream().map(Dish::getName).collect(Collectors.toList());
+//        List<String> names = menu.stream().map(Dish::getName).collect(Collectors.toList());
+
+        Comparator<Dish> dishComparator = Comparator.comparingInt(Dish::getCalories);
+        List<Dish> a = null;
+        Optional<Dish> d = a.stream().collect(Collectors.maxBy(dishComparator));
+
+//        menu.stream().collect(Collectors.partitioningBy());
 
     }
 
