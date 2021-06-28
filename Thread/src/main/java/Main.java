@@ -62,11 +62,18 @@ public class Main {
     }
 
     public static void testInterrupt() throws InterruptedException {
-        Thread t = new ThreadInterrupt();
+        Thread t = new ThreadInterrupt1();
         t.start();
         Thread.sleep(1);
         t.interrupt();
-        t.join();
+        try {
+            t.join();
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        System.out.println(Thread.currentThread().isInterrupted());
+        System.out.println(Thread.interrupted());
+        Thread.currentThread().interrupt();
         System.out.println("end");
     }
 }

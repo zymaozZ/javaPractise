@@ -1,4 +1,4 @@
-public class ThreadInterrupt extends Thread{
+public class ThreadInterrupt2 extends Thread{
 
     @Override
     public void run() {
@@ -6,6 +6,9 @@ public class ThreadInterrupt extends Thread{
         while (!isInterrupted()) {
             n++;
             System.out.println(n + " hello");
+            try {
+                Thread.sleep(100);
+            } catch ()
         }
     }
 }
