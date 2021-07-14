@@ -6,7 +6,8 @@ public class Main {
 //        t3();
 //        t4();
 //        testJoin();
-        testInterrupt();
+//        testInterrupt();
+        testInterruptWithJoin();
     }
 
     public static void t1() {
@@ -73,7 +74,15 @@ public class Main {
         }
         System.out.println(Thread.currentThread().isInterrupted());
         System.out.println(Thread.interrupted());
-        Thread.currentThread().interrupt();
+        System.out.println("end");
+    }
+
+    public static void testInterruptWithJoin() throws InterruptedException {
+        Thread t = new ThreadInterruptWithHello();
+        t.start();
+        Thread.sleep(1000);
+        t.interrupt();
+        t.join();
         System.out.println("end");
     }
 }
